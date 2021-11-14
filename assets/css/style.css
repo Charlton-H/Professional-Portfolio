@@ -102,13 +102,13 @@ footer h4 {
 .about-me h2 {
   font-size: 46px;
   flex: 1;
-  padding: 20px 100px;
+  padding: 20px 85px 20px 100px;
   white-space: nowrap;
   text-align: left;
 }
 
 .about-me text {
-  flex: 1;
+  flex: 7;
   margin: 0 auto;
   padding: 20px auto;
   text-align: center;
@@ -117,49 +117,57 @@ footer h4 {
 .work {
   display: flex;
   padding: 50px;
-  text-align: left;
 }
 
 .work h2 {
   font-size: 46px;
   flex: 1;
   padding: 20px 100px;
+  text-align: left;
 }
 
 .projects {
   max-width: 100%;
   padding: 20px;
   display: flex;
-  flex: 6.5;
+  flex: 7;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card {
+  margin: 10px auto;
+  flex: 2 10%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px;
 }
 
 .card img:nth-of-type(1) {
   max-width: 100%;
   height: auto;
-  border-radius: 15px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .card:nth-of-type(1) {
-  border-radius: 15px;
   margin: 10px;
-  flex: 100%;
+  flex: 1 100%;
   max-width: 100%;
   text-align: center;
+  border-radius: 15px;
 }
 
-.card {
-  border-radius: 15px;
-  margin: 10px auto;
-  flex: 50%;
-  max-width: 25%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+.container {
+  padding: 5px 15px;
+  text-align: center;
 }
 
 .card:hover {
@@ -175,13 +183,14 @@ footer h4 {
 .contact-me h2 {
   font-size: 46px;
   flex: 1;
-  padding: 20px 100px;
+  padding: 20px 50px 20px 100px;
   text-align: left;
+  white-space: nowrap;
 }
 
 .contact-me nav {
   margin: 7px 0;
-  flex: 2;
+  flex: 7;
   max-width: 100%;
   align-items: center;
   padding: 18px 100px;
@@ -195,7 +204,7 @@ footer h4 {
 }
 
 .contact-me ul li {
-  flex: 4 33%;
+  flex: 7 33%;
   font-size: 32px;
   max-width: 100%;
 }
@@ -209,13 +218,13 @@ footer h4 {
 .resume h2 {
   font-size: 46px;
   flex: 1;
-  padding: 20px 100px;
+  padding: 20px 120px 20px 100px;
   text-align: left;
 }
 
 .resume a {
   font-size: 32px;
-  flex: 4;
+  flex: 7;
   padding: 20px 100px;
   text-align: center;
 }
