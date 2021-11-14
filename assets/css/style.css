@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/black-sand.jfif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 50%;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+footer {
+  background: black;
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer h4 {
+  color: white;
+  /* font-size: 30px; */
+  margin: 0;
+}
+
+.hero {
+  height: 300px;
+  background-image: url("../images/black-sand.jfif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 40%;
+}
+
+/* main {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.about-me {
+  display: flex;
+  padding: 50px;
+}
+
+.about-me h2 {
+  font-size: 46px;
+  flex: 1;
+  padding: 20px 100px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.about-me text {
+  flex: 1;
+  margin: 0 auto;
+  padding: 20px auto;
+  text-align: center;
+}
+
+.work {
+  display: flex;
+  padding: 50px;
+  text-align: left;
+}
+
+.work h2 {
+  font-size: 46px;
+  flex: 1;
+  padding: 20px 100px;
+}
+
+.projects {
+  max-width: 100%;
+  padding: 20px;
+  display: flex;
+  flex: 6.5;
+  flex-wrap: wrap;
+}
+
+.card img:nth-of-type(1) {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card:nth-of-type(1) {
+  border-radius: 15px;
+  margin: 10px;
+  flex: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card {
+  border-radius: 15px;
+  margin: 10px auto;
+  flex: 50%;
+  max-width: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact-me {
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-me h2 {
+  font-size: 46px;
+  flex: 1;
+  padding: 20px 100px;
+  text-align: left;
+}
+
+.contact-me nav {
+  margin: 7px 0;
+  flex: 2;
+  max-width: 100%;
+  align-items: center;
+  padding: 18px 100px;
+}
+
+.contact-me nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.contact-me ul li {
+  flex: 4 33%;
+  font-size: 32px;
+  max-width: 100%;
+}
+
+.resume {
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.resume h2 {
+  font-size: 46px;
+  flex: 1;
+  padding: 20px 100px;
+  text-align: left;
+}
+
+.resume a {
+  font-size: 32px;
+  flex: 4;
+  padding: 20px 100px;
+  text-align: center;
+}
