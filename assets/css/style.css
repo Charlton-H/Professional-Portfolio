@@ -64,7 +64,7 @@ header nav ul li a:hover {
 footer {
   background: black;
   width: 100%;
-  padding: 40px 35px;
+  padding: 10px 35px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -88,12 +88,6 @@ footer h4 {
   background-attachment: fixed;
   background-position: 40%;
 }
-
-/* main {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .about-me {
   display: flex;
   padding: 50px;
@@ -107,8 +101,15 @@ footer h4 {
   text-align: left;
 }
 
+.about-me img {
+  flex: 2;
+  max-width: 200px;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
 .about-me text {
-  flex: 7;
+  flex: 6;
   margin: 0 auto;
   padding: 20px auto;
   text-align: center;
@@ -176,8 +177,9 @@ footer h4 {
 
 .contact-me {
   display: flex;
-  padding: 50px;
   flex-wrap: wrap;
+  background: black;
+  color: white;
 }
 
 .contact-me h2 {
@@ -204,27 +206,92 @@ footer h4 {
 }
 
 .contact-me ul li {
-  flex: 7 33%;
+  flex: 7 20%;
   font-size: 32px;
   max-width: 100%;
 }
 
-.resume {
-  display: flex;
-  padding: 50px;
-  flex-wrap: wrap;
+.contact-me ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-weight: lighter;
 }
 
-.resume h2 {
-  font-size: 46px;
-  flex: 1;
-  padding: 20px 120px 20px 100px;
-  text-align: left;
+.contact-me ul li a:visited {
+  color: white;
+  text-decoration: none;
 }
 
-.resume a {
-  font-size: 32px;
-  flex: 7;
-  padding: 20px 100px;
-  text-align: center;
+.contact-me ul li a:hover {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .about-me img {
+    text-align: center;
+  }
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER*/
+@media screen and (max-width: 780px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
 }
